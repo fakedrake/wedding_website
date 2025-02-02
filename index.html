@@ -6,15 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Basic styling for the menu */
+        .horizontal-menu {
+            background-color: #f0f0f0; /* Example background color */
+            padding: 10px;
+            text-align: center; /* Center the menu items */
+        }
+
+        .horizontal-menu a {
+            display: inline-block; /* Make items horizontal */
+            padding: 10px 20px; /* Add some padding around items */
+            text-decoration: none; /* Remove underlines from links */
+            color: #333; /* Example text color */
+            margin: 0 10px; /* Space between items */
+        }
+
+        .horizontal-menu a:hover {
+            background-color: #ddd;  /* Example hover background color */
+        }
+    </style>
+
   </head>
   <body class="is-preload">
 
     <div id="wrapper" class="divided">
+      <div class="horizontal-menu">
+        <a href="#first">Our Story</a>
+        <a href="#ceremony">Ceremony</a>
+        <a href="#reception">Reception</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#gallery">Gallery</a>
+      </div>
 
       <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 	<div class="content">
 	  <h1>Christos & Marina</h1>
-	  <p class="major">We are getting married!</p>
+	  <p class="major"><i>We are getting married!</i></p>
 	  <p>Save the date: <b>18th October 2025</b> | <b>Limassol, Cyprus</b>.
 
 	    <ul class="actions stacked">
@@ -31,8 +59,7 @@
 	  <h2>Our Story</h2>
 	  <p>
 	    Our story begins in Edinburgh, the land of bagpipes,
-	    whisky, grey skies, and golden moments. It's where our
-	    story began. Christos, armed with his impressive
+	    whisky, grey skies, and, for us, golden moments. Christos, armed with his impressive
 	    collection of obscure film references, attempted to dazzle
 	    Marina on their first date. Let's just say, Marina wasn't
 	    quite as fascinated by experimental cinema. But despite
@@ -49,22 +76,19 @@
 	</div>
       </section>
 
-      <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+      <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in", id="ceremony">
 	<div class="content">
 	  <h2>The Ceremony</h2>
 	  <p>The ceremony will be held at the church of <b>Agios Arsenios</b> in Limassol at <b>6:30pm</b>.</p>
 	  <p>Parking will be available <a href="https://maps.app.goo.gl/qgdz9doqQJmyunn78">opposite to the church</a>.</p>
 	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.0898581788206!2d33.01909267581714!3d34.70291343309406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73390b1103091%3A0xedb2c1e92400d676!2sAgios%20Arsenios%2C%20Limassol%203116%2C%20Cyprus!5e0!3m2!1sen!2suk!4v1736727533539!5m2!1sen!2suk" width="600" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	  <!-- <ul class="actions stacked"> -->
-	    <!-- 	<li><a href="#rsvp" class="button">RSVP</a></li> -->
-            <!-- </ul> -->
 	</div>
 	<div class="image">
-	  <img src="images/couple/subheading2.jpg" alt="Christos and Marina" />
+	  <img src="images/agios_arsenios.jpg" alt="Christos and Marina" />
 	</div>
       </section>
 
-      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="reception">
 	<div class="content">
 	  <h3>The Reception</h3>
 	  <p>
@@ -77,20 +101,37 @@
 
 	</div>
 	<div class="image">
-	  <img src="images/couple/subheading3.jpg" alt="Christos and Marina" />
+	  <img src="images/poseidonia.jpg" alt="Christos and Marina" />
 	</div>
       </section>
 
-      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="recommendations">
 	<div class="content">
 	  <h3>Recommendations</h3>
 	  <p>
-	    Some recommendations will go here.
+	    Public transport in Cyprus is very limited, therefore we would recommend a car hire where possible.
+	  </p>
+	  <p>
+	    <h4>Recommended Accommodations:</h4>
+	    <ul>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJG4S6cG7L4BQR_3duamyN9Jo">Poseidonia Beach Hotel</a> (contact us if you decide to book)</li>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJgaZF66fM4BQRDOi-qfBuA68">Harmony Bay</a></li>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJ9zdsPVsz5xQRftWZv_T50fk">Ajax</a></li>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJMQi83gUz5xQRAp4aHgS-N_M">Pefkos</a></li>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJmZv4Ixoz5xQREdZZZ7aDLyQ">NYX Hotel</a></li>
+	    </ul>
+
+	    <h4>Tavernas</h4>
+	    <ul>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJ41aAil3K4BQR7Svy5RYxklU">Agios epiktitos</a></li>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJ-30_S90z5xQRjh3lGI_yo3U">Shambellos</a></li>
+	      <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJlRBNgz3L4BQRS0vuS-j4CNc">Forsos</a></li>
+	    </ul>
 	  </p>
 	</div>
       </section>
 
-      <section class="wrapper style1 align-center">
+      <section class="wrapper style1 align-center" id="gallery">
 	<div class="inner">
 	  <h2>Our Moments Together</h2>
 	  <p>A few snapshots of our journey together</p>
